@@ -1,0 +1,40 @@
+{
+  "service": {
+    "download_path": "",
+    "os": ""
+  },
+  "services": {
+    "log": {
+      "logrus": {
+        "log_level": 6,
+        "log_file": "./logs/service.log",
+        "max_size": 3,
+        "max_backup": 60,
+        "max_age": 30,
+        "pretty_format": true,
+        "force_color": true,
+        "full_time_stamp": true
+      }
+    }
+  },
+  "api": {
+    "bing": {
+      "auth": {},
+      "status": {
+        "method": "GET",
+        "address": "https://api.test.hotelbeds.com/hotel-api/1.0/status",
+        "request": {
+          "headers": {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip"
+          }
+        }
+      }
+    }
+  },
+  "rules": {
+    "connection": {
+      "default_time_out": "60s"
+    }
+  }
+}
