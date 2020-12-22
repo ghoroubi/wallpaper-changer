@@ -19,10 +19,11 @@
   },
   "api": {
     "bing": {
+      "base_url": "http://www.bing.com/",
       "auth": {},
-      "status": {
+      "get_image": {
         "method": "GET",
-        "address": "https://api.test.hotelbeds.com/hotel-api/1.0/status",
+        "address": "http://www.bing.com/HPImageArchive.aspx?",
         "request": {
           "headers": {
             "Accept": "*/*",
